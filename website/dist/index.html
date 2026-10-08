@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>访谈证据台 · 设计洞察审议</title>
+    <meta name="description" content="从原话到候选洞察，查看证据链并记录设计师审议。" />
+    <link rel="stylesheet" href="./styles.css?v=13" />
+    <style id="report-document-style">
+      .handoff-report { box-sizing: border-box; max-width: 920px; margin: 0 auto; padding: 64px 72px 76px; background: #fff; color: #223947; font-family: "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.7; }
+      .handoff-report * { box-sizing: border-box; }
+      .handoff-report .report-kicker { margin: 0 0 12px; color: #4d837c; font-size: 12px; font-weight: 750; letter-spacing: .04em; }
+      .handoff-report h1 { margin: 0; color: #17334b; font-size: 34px; line-height: 1.3; letter-spacing: -.03em; }
+      .handoff-report .report-question { margin: 20px 0 0; color: #526e7c; font-size: 16px; line-height: 1.7; }
+      .handoff-report .report-meta { display: flex; flex-wrap: wrap; gap: 8px 25px; margin-top: 30px; padding: 15px 0; border-top: 1px solid #d9e5e7; border-bottom: 1px solid #d9e5e7; color: #647d88; font-size: 12px; }
+      .handoff-report .report-demo { margin: 24px 0 0; padding: 13px 16px; border-left: 3px solid #c79851; background: #fcf5e9; color: #7a5a2d; font-size: 12px; }
+      .handoff-report .report-lead { margin: 36px 0 15px; font-size: 16px; color: #2f5663; }
+      .handoff-report .report-theme { margin-top: 46px; border-top: 4px solid #244b5d; }
+      .handoff-report .report-theme-head { padding: 23px 0 18px; border-bottom: 1px solid #d7e3e5; }
+      .handoff-report .report-theme-number { color: #5b817f; font-size: 11px; font-weight: 800; }
+      .handoff-report .report-theme-head h2 { margin: 4px 0 6px; color: #17384a; font-size: 27px; line-height: 1.35; }
+      .handoff-report .report-theme-head p { margin: 0; color: #607985; font-size: 13px; }
+      .handoff-report .report-item { break-inside: avoid; page-break-inside: avoid; padding: 29px 0 30px; border-bottom: 1px solid #d7e3e5; }
+      .handoff-report .report-item-label { display: block; margin-bottom: 14px; color: #347e76; font-size: 12px; font-weight: 800; }
+      .handoff-report .report-item h3 { margin: 0 0 25px; color: #1b3d4e; font-size: 21px; line-height: 1.5; }
+      .handoff-report .report-review-note { margin: 18px 0 0; padding-top: 12px; border-top: 1px dashed #d8e3e5; color: #728790; font-size: 11px; line-height: 1.65; }
+      .handoff-report .report-detail { margin: 0 0 19px; }
+      .handoff-report .report-detail dt { margin-bottom: 5px; color: #6c8790; font-size: 12px; font-weight: 750; }
+      .handoff-report .report-detail dd { margin: 0; color: #2d4b5a; font-size: 15px; }
+      .handoff-report .report-goal { margin-top: 25px; padding: 17px 20px; background: #eaf4f1; border-left: 3px solid #4e998d; }
+      .handoff-report .report-goal dt { color: #34776e; }
+      .handoff-report .report-goal dd { color: #1d514e; font-weight: 700; }
+      .handoff-report .report-hmw { break-inside: avoid; margin: 28px 0 8px; padding: 24px 26px; background: #f2f6f7; border-left: 4px solid #c6924e; }
+      .handoff-report .report-hmw > h3 { margin: 0 0 16px; color: #6f522a; font-size: 15px; }
+      .handoff-report .report-hmw-card + .report-hmw-card { margin-top: 18px; padding-top: 18px; border-top: 1px solid #d5e0e2; }
+      .handoff-report .report-hmw-status { color: #8a6634; font-size: 10px; font-weight: 750; }
+      .handoff-report .report-hmw-card h4 { margin: 5px 0 16px; color: #173d4c; font-size: 18px; line-height: 1.55; }
+      .handoff-report .report-hmw-card .report-detail { margin-bottom: 12px; }
+      .handoff-report .report-concepts { margin-top: 26px; padding-top: 22px; border-top: 1px solid #d5e0e2; }
+      .handoff-report .report-concepts > h4 { margin: 0 0 14px; color: #355966; font-size: 14px; }
+      .handoff-report .report-concept-card { break-inside: avoid; page-break-inside: avoid; margin-top: 12px; padding: 18px 19px; border: 1px solid #d5e3e3; background: #fff; }
+      .handoff-report .report-concept-status { color: #4d837c; font-size: 10px; font-weight: 750; }
+      .handoff-report .report-concept-card h5 { margin: 5px 0 8px; color: #173d4c; font-size: 17px; }
+      .handoff-report .report-concept-summary { margin: 0 0 15px; color: #365461; font-size: 14px; }
+      .handoff-report .report-concept-card .report-detail { margin-bottom: 10px; }
+      .handoff-report .report-hmw-empty { margin: 0; color: #657b84; font-size: 12px; }
+      .handoff-report .report-empty { padding: 24px; border: 1px solid #d9e5e7; color: #5b7380; }
+      .handoff-report .report-end { margin: 35px 0 0; padding-top: 15px; border-top: 1px solid #d9e5e7; color: #718a94; font-size: 11px; }
+      @media (max-width: 700px) { .handoff-report { padding: 34px 22px 50px; } .handoff-report h1 { font-size: 27px; } .handoff-report .report-theme-head h2 { font-size: 23px; } .handoff-report .report-item h3 { font-size: 18px; } }
+      @media print { body { background: #fff !important; } .handoff-report { max-width: none; padding: 0; } .handoff-report .report-item { break-inside: avoid; } }
+    </style>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="访谈证据台">
+          <div class="brand-symbol" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="brand-copy"><strong>访谈证据台</strong><small>设计洞察审议</small></div>
+        </div>
+        <div class="topbar-actions">
+          <span id="data-label" class="data-label"></span>
+          <button id="guide-button" type="button" class="button button-soft">返回首页</button>
+          <button id="export-button" type="button" class="button button-dark">生成讨论简报</button>
+          <input id="file-input" type="file" accept=".json,.txt,application/json,text/plain" multiple hidden />
+        </div>
+      </header>
+
+      <section id="guide-screen" class="guide-screen" aria-labelledby="guide-title">
+        <div class="guide-hero">
+          <div class="guide-copy">
+            <p class="guide-eyebrow">访谈证据台 / 从逐字稿到设计判断</p>
+            <h1 id="guide-title">先定设计问题，再让 AI 整理证据。<br />最后由设计师决定。</h1>
+            <p class="guide-summary">这里是审阅台：把带主题的候选洞察与支持原话、限定原话放在一起核对。设计问题由团队提出；Codex Skill 第一次整理访谈；设计师确认洞察和主题；Codex 再读取人工结果，形成设计机会、HMW 与待筛选的创意方案。</p>
+            <div class="guide-actions">
+              <button id="continue-review" type="button" class="button button-primary" hidden>继续当前项目</button>
+              <button id="prepare-button" type="button" class="button guide-primary">开始新访谈项目</button>
+              <button id="guide-history-button" type="button" class="button button-outline-light">查看历史项目</button>
+            </div>
+            <div class="guide-demo-actions" aria-label="演示入口">
+              <span>了解流程：</span>
+              <button id="try-demo" type="button" class="guide-text-action">体验模拟案例</button>
+              <button id="sample-report-button" type="button" class="guide-text-action">查看已审简报示例</button>
+            </div>
+            <p class="guide-disclaimer">演示材料全部虚构，仅用来检验工具流程和界面，不构成用户研究结论。</p>
+            <p id="site-tool-status" class="guide-disclaimer" role="status">正在检查 Codex 到看板的连接…</p>
+          </div>
+          <div class="guide-example" aria-label="一条证据的追溯示例">
+            <p class="example-caption">在一条判断里，追溯每次转译</p>
+            <div class="example-source"><span>原话 · DEMO-S01 L4</span><blockquote>“周三那盒在里面，我先把前面两盒拿到台面，取完再放回去。”</blockquote></div>
+            <div class="example-link" aria-hidden="true"></div>
+            <div class="example-observation"><span>原子观察 · DEMO-O02</span><strong>先移开前方两盒，再取目标盒。</strong></div>
+            <div class="example-link" aria-hidden="true"></div>
+            <div class="example-insight"><span>候选洞察 · DEMO-I01</span><strong>后排取盒可能增加额外步骤；仍需核对购买量与摆放习惯。</strong></div>
+          </div>
+        </div>
+
+        <div class="guide-body">
+          <div class="guide-intro"><h2>从哪里开始</h2><p>让这个网页保持打开，在 Codex 对话里附上匿名化逐字稿。Codex 整理后把卡片送到这里，你再逐卡审阅。</p></div>
+          <div class="workflow-steps">
+            <article class="workflow-step"><span class="step-number">1</span><h3>提出设计问题</h3><p>根据产品、人群与设计范围，手动写一个能直接开启方案构思的宽问题，不要让 AI 仅凭逐字稿倒推目标。</p></article>
+            <article class="workflow-step"><span class="step-number">2</span><h3>Codex 整理并初步分组</h3><p>在 Codex 对话中附上匿名化 TXT。Skill 提取证据与候选洞察，并按共同任务或障碍机制提议主题。</p></article>
+            <article class="workflow-step"><span class="step-number">3</span><h3>人审洞察，再执行第二次 AI 综合</h3><p>逐条确认洞察；需要修改时，可改结论、适用情境和主题。全部审完后，Codex 读取人工结果，生成设计机会、HMW 与创意方案种子；若审议再修改，旧综合自动失效。</p></article>
+          </div>
+          <p id="demo-scale" class="demo-scale"></p>
+
+          <section id="history-panel" class="history-panel" aria-labelledby="history-title" hidden>
+            <div class="history-heading">
+              <div><span class="overline">保存在本浏览器</span><h2 id="history-title">历史项目</h2></div>
+              <p>切换项目会恢复对应的逐字稿、审阅记录、主题调整和已生成简报。其他浏览器、隐私窗口和设备不会自动同步。</p>
+            </div>
+            <div id="history-list" class="history-list" aria-live="polite"></div>
+          </section>
+
+          <section id="prepare-panel" class="prepare-panel" aria-labelledby="prepare-title" hidden>
+            <div class="prepare-heading"><div><span class="overline">使用自己的访谈</span><h2 id="prepare-title">把原始材料交给 Codex</h2></div><p>保持本页在 Codex 内置浏览器中打开；复制任务说明到 Codex 对话，附上匿名化逐字稿。Skill 会整理材料，再调用本页的 set_cards 写入卡片。网页本身不调用模型。</p></div>
+            <div class="prepare-grid">
+              <div class="prepare-inputs">
+                <label class="prepare-field"><span>项目 ID</span><input id="new-project-id" type="text" value="P01" placeholder="例如 P01" /></label>
+                <label class="prepare-field"><span>设计问题 <em>由研究者填写</em></span><textarea id="new-research-question" rows="3" placeholder="例如：如何为工作日备餐的两人家庭优化冰箱内布局？"></textarea></label>
+                <button id="copy-task" type="button" class="button button-primary">复制给 Codex 的任务说明</button>
+              </div>
+              <div class="prepare-output"><label for="task-preview">任务说明预览</label><textarea id="task-preview" readonly rows="9"></textarea></div>
+            </div>
+            <div class="prepare-import"><div><strong>备用：手动导入分析结果</strong><p>如果 Codex 无法调用本页工具，可一次选择 1 份 bundle.json 和对应的逐字稿 TXT。只选 TXT 不会启动 AI 分析。</p></div><button id="choose-files" type="button" class="button button-dark">选择结果文件并开始审阅</button></div>
+          </section>
+        </div>
+      </section>
+
+      <div id="workspace" class="workspace" hidden>
+        <aside class="left-rail" aria-label="洞察列表">
+          <div class="rail-project">
+            <span class="overline">当前设计问题</span>
+            <h1 id="project-title"></h1>
+            <p id="project-meta"></p>
+          </div>
+
+          <div class="rail-tools">
+            <label class="search-field">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"></circle><path d="m16 16 4.5 4.5"></path></svg>
+              <input id="insight-search" type="search" placeholder="搜索洞察或场景" aria-label="搜索洞察或场景" />
+            </label>
+            <div id="status-filters" class="status-filters" aria-label="按审议状态筛选"></div>
+          </div>
+
+          <div class="rail-list-heading"><span>候选洞察</span><span id="insight-count"></span></div>
+          <div id="insight-list" class="insight-list"></div>
+
+          <div class="rail-footer">
+            <span class="rail-footer-icon" aria-hidden="true">↗</span>
+            <p>从洞察回到原话，保留每一步的判断依据。</p>
+          </div>
+        </aside>
+
+        <main id="main-content" class="main-content" tabindex="-1"></main>
+
+        <aside class="review-rail" aria-label="审议记录">
+          <div class="review-topline"><span>设计师审议</span><span class="review-lock" aria-hidden="true">● 人工决定</span></div>
+          <div id="review-content"></div>
+        </aside>
+      </div>
+
+      <section id="report-screen" class="report-screen" aria-label="设计洞察讨论简报" hidden>
+        <div class="report-toolbar">
+          <button id="report-back" type="button" class="button button-soft">返回审阅</button>
+          <div class="report-toolbar-copy"><strong id="report-toolbar-title">设计洞察讨论简报</strong><span id="report-toolbar-note"></span></div>
+          <div id="report-actions" class="report-actions" hidden>
+            <button id="report-copy" type="button" class="button button-soft">复制正文</button>
+            <button id="report-markdown" type="button" class="button button-soft">下载 Markdown</button>
+            <button id="report-download" type="button" class="button button-dark">下载 HTML</button>
+            <button id="report-print" type="button" class="button button-soft">下载 PDF</button>
+          </div>
+        </div>
+        <div id="report-content"></div>
+      </section>
+    </div>
+
+    <div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
+    <aside id="source-drawer" class="source-drawer" aria-label="访谈原文" aria-hidden="true" tabindex="-1" inert>
+      <div class="drawer-header">
+        <div><span class="overline">来源核对</span><h2>访谈上下文</h2></div>
+        <button id="drawer-close" type="button" class="icon-button" aria-label="关闭访谈上下文">×</button>
+      </div>
+      <div id="drawer-content" class="drawer-content"></div>
+    </aside>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="./demo-data.js?v=13"></script>
+    <script src="./app.js?v=13"></script>
+  </body>
+</html>

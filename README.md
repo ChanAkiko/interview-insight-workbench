@@ -5,8 +5,8 @@
 ## 包含内容
 
 - `skill/interview-insight-cards/`：Codex Skill 本体、字段规范和校验脚本。
-- `website/`：访谈证据台的完整静态网页文件。
-- `examples/`：两份模拟访谈逐字稿和对应的示例 bundle。
+- `website/`：访谈证据台源码、构建脚本、发布目录和托管配置。
+- `examples/`：八份模拟访谈、schema v0.2 bundle、案例生成脚本和讨论简报示例。
 
 在线访谈证据台：<https://interview-evidence-workbench.chanakiko04.chatgpt.site/>
 
@@ -56,7 +56,20 @@ python3 -m http.server 8766
 
 ## 示例试跑
 
-`examples/` 中的两份 TXT 是虚构访谈材料，`模拟数据_bundle.json` 是对应的结构化结果。可以把 TXT 附到 Codex 对话中测试完整流程，也可以在网页的备用导入入口同时选择 bundle 与 TXT，直接进入审阅。
+`examples/` 中包含八份虚构访谈材料、32 段原话、32 条原子观察、5 个主题和9张候选洞察卡。可以把 TXT 附到 Codex 对话中测试完整流程，也可以在网页的备用导入入口同时选择 `模拟数据_bundle.json` 与对应 TXT，直接进入审阅。`示例_设计洞察讨论简报.html` 展示完整审阅和第二次 AI 综合后的可交接结果。
+
+## 重新生成案例与网页
+
+修改案例源数据后，在分享包根目录运行：
+
+```bash
+python3 examples/build_case.py
+python3 skill/interview-insight-cards/scripts/cards.py validate examples/模拟数据_bundle.json
+python3 website/scripts/build-demo.py
+python3 website/scripts/build-site.py
+```
+
+`build-demo.py` 将案例写入 `website/demo-data.js`，`build-site.py` 将网页源码同步到 `website/dist/`。托管配置位于 `website/.openai/hosting.json`。
 
 ## 数据结构
 
@@ -84,14 +97,27 @@ Skill 使用 schema v0.2，核心链路为：
 │   ├── index.html
 │   ├── app.js
 │   ├── styles.css
-│   └── demo-data.js
+│   ├── demo-data.js
+│   ├── scripts/
+│   │   ├── build-demo.py
+│   │   └── build-site.py
+│   ├── dist/
+│   └── .openai/hosting.json
 └── examples/
-    ├── S01_模拟访谈.txt
-    ├── S02_模拟访谈.txt
-    └── 模拟数据_bundle.json
+    ├── S01—S08_扩展模拟访谈.txt
+    ├── build_case.py
+    ├── 模拟数据_bundle.json
+    └── 示例_设计洞察讨论简报.html
 ```
 
 ## 更新日志
+
+### v14
+
+- 将分享包示例统一升级为 schema v0.2 的八份访谈案例。
+- 补充案例生成、演示数据生成和网站构建脚本。
+- 补充网站发布目录与托管配置。
+- 增加完整讨论简报示例和源码重建说明。
 
 ### v13
 
