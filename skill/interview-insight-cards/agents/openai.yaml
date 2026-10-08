@@ -1,0 +1,3 @@
+interface:
+  display_name: "访谈洞察卡片"
+  short_description: "从访谈原话生成可追溯、待人工审议的洞察卡"

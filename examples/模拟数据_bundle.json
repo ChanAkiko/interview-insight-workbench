@@ -1,0 +1,138 @@
+{
+  "schema_version": "0.1",
+  "project": {
+    "project_id": "DEMO-P01",
+    "research_question": "1—2人家庭工作日取用备餐食材时，冷藏室摆放方式造成了哪些可观察的额外步骤？",
+    "question_version": "1"
+  },
+  "sessions": [
+    {
+      "session_id": "DEMO-S01",
+      "participant_code": "模拟U01",
+      "date": "2026-09-28",
+      "method": "模拟访谈",
+      "context": "一人家庭，周末准备工作日食材；内容完全虚构",
+      "source_file": "S01_模拟访谈.txt",
+      "source_url": "",
+      "transcript_version": "1",
+      "use_scope": "仅作流程演示；非真实研究证据"
+    },
+    {
+      "session_id": "DEMO-S02",
+      "participant_code": "模拟U02",
+      "date": "2026-09-28",
+      "method": "模拟访谈",
+      "context": "两人家庭，工作日晚餐使用备菜盒；内容完全虚构",
+      "source_file": "S02_模拟访谈.txt",
+      "source_url": "",
+      "transcript_version": "1",
+      "use_scope": "仅作流程演示；非真实研究证据"
+    }
+  ],
+  "excerpts": [
+    {
+      "excerpt_id": "DEMO-E01",
+      "session_id": "DEMO-S01",
+      "line_start": 4,
+      "line_end": 4,
+      "speaker": "受访者",
+      "quote": "周三做饭时，我把前面两盒东西拿出来，才取到后面的备菜盒。",
+      "preceding_question": "周三拿盒子时发生过什么？"
+    },
+    {
+      "excerpt_id": "DEMO-E02",
+      "session_id": "DEMO-S01",
+      "line_start": 6,
+      "line_end": 6,
+      "speaker": "受访者",
+      "quote": "不一定。上周买得少的时候，我直接就拿到了。",
+      "preceding_question": "每周都这样吗？"
+    },
+    {
+      "excerpt_id": "DEMO-E03",
+      "session_id": "DEMO-S02",
+      "line_start": 2,
+      "line_end": 2,
+      "speaker": "受访者",
+      "quote": "我们通常把备菜盒放在最前面，晚上回来可以直接拿。",
+      "preceding_question": "你们通常怎样放工作日要用的备菜盒？"
+    },
+    {
+      "excerpt_id": "DEMO-E04",
+      "session_id": "DEMO-S02",
+      "line_start": 4,
+      "line_end": 4,
+      "speaker": "受访者",
+      "quote": "有时吃完饭很累，我会把新买的东西塞在前面。",
+      "preceding_question": "归位时会怎样？"
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "DEMO-O01",
+      "excerpt_ids": ["DEMO-E01"],
+      "evidence_type": "用户自述过去的行为",
+      "task": "取备菜盒做晚餐",
+      "action": "先移开前方两个容器，再取后方备菜盒",
+      "object": "备菜盒及前方两个容器",
+      "context": "周三做饭时",
+      "obstacle": "目标盒在其他容器后方",
+      "consequence": "这一次取物需要移开两个容器",
+      "workaround": "暂时取出前方两个容器",
+      "unknown": ["这种情形的实际发生频率", "冰箱尺寸和层架深度", "容器规格及摆放原因"]
+    },
+    {
+      "observation_id": "DEMO-O02",
+      "excerpt_ids": ["DEMO-E02"],
+      "evidence_type": "用户自述过去的行为",
+      "task": "取用备菜盒",
+      "action": "在购买较少的一周直接拿到备菜盒",
+      "object": "备菜盒",
+      "context": "上周买得少时",
+      "obstacle": "",
+      "consequence": "该周未报告额外移物步骤",
+      "workaround": "",
+      "unknown": ["当周实际购买量", "当周容器摆放照片"]
+    },
+    {
+      "observation_id": "DEMO-O03",
+      "excerpt_ids": ["DEMO-E03"],
+      "evidence_type": "用户自述过去的行为",
+      "task": "下班后取用备菜盒",
+      "action": "把备菜盒放在前方并直接拿取",
+      "object": "备菜盒",
+      "context": "工作日晚间",
+      "obstacle": "",
+      "consequence": "受访者称可直接拿取",
+      "workaround": "将常用盒放在前方",
+      "unknown": ["此做法能否持续一整周", "其他物品是否被遮挡"]
+    },
+    {
+      "observation_id": "DEMO-O04",
+      "excerpt_ids": ["DEMO-E04"],
+      "evidence_type": "用户自述过去的行为",
+      "task": "新购食材归位",
+      "action": "把新购物品放在前方",
+      "object": "新购物品",
+      "context": "晚饭后疲劳时",
+      "obstacle": "",
+      "consequence": "原话未说明具体后果",
+      "workaround": "",
+      "unknown": ["是否实际遮挡备菜盒", "是否与冰箱内部布局有关"]
+    }
+  ],
+  "insights": [
+    {
+      "insight_id": "DEMO-I01",
+      "statement": "在食材或容器位于备菜盒前方的情形下，取用备菜盒可能需要额外移物步骤；这是否由冰箱布局造成尚未确定。",
+      "applies_to": "工作日从冷藏室取备菜盒的1—2人家庭；仅有模拟访谈示例",
+      "support_observation_ids": ["DEMO-O01"],
+      "limiting_observation_ids": ["DEMO-O02", "DEMO-O03"],
+      "alternative_explanations": ["购物量增加", "容器规格和摆放习惯", "备菜盒未持续放在前方"],
+      "open_questions": ["实际拍照记录中，哪些物品经常遮挡备菜盒？", "不同购买量下取用步骤如何变化？", "改变归位规则是否比改变层架更有效？"],
+      "status": "待审",
+      "reviewer": "",
+      "review_reason": ""
+    }
+  ]
+}

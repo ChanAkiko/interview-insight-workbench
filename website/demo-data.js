@@ -1,0 +1,1308 @@
+window.WORKBENCH_DEMO = {
+  "bundle": {
+    "schema_version": "0.2",
+    "project": {
+      "project_id": "DEMO-P02",
+      "research_question": "如何为工作日备餐的两人家庭优化冰箱内布局？",
+      "question_version": "1"
+    },
+    "themes": [
+      {
+        "theme_id": "T01",
+        "label": "取用路径与遮挡",
+        "definition": "目标食材被其他物品遮挡、位于深处或低处时产生的额外寻找和移动步骤。"
+      },
+      {
+        "theme_id": "T02",
+        "label": "共同归位与分区",
+        "definition": "多人共用冷藏空间时，位置规则、个人分区与归位变化造成的不确定性。"
+      },
+      {
+        "theme_id": "T03",
+        "label": "容器与空间适配",
+        "definition": "容器尺寸、层高、装载量与不同备餐节奏之间的空间匹配和调整负担。"
+      },
+      {
+        "theme_id": "T04",
+        "label": "内容辨认与优先处理",
+        "definition": "识别盒内内容、日期和应优先食用物品时遇到的信息缺失或维护负担。"
+      },
+      {
+        "theme_id": "T05",
+        "label": "研究边界与验证",
+        "definition": "跨主题的成因区分、样本限制和进入方案前仍需验证的判断。"
+      }
+    ],
+    "sessions": [
+      {
+        "session_id": "DEMO-S01",
+        "participant_code": "模拟U01",
+        "date": "2026-09-19",
+        "method": "虚构访谈",
+        "context": "独居，周日分装三天晚餐食材；内容完全虚构",
+        "source_file": "S01_扩展模拟访谈.txt",
+        "source_url": "",
+        "transcript_version": "1",
+        "use_scope": "仅作界面试验；非真实研究证据"
+      },
+      {
+        "session_id": "DEMO-S02",
+        "participant_code": "模拟U02",
+        "date": "2026-09-20",
+        "method": "虚构访谈",
+        "context": "两人家庭，轮流做工作日晚餐；内容完全虚构",
+        "source_file": "S02_扩展模拟访谈.txt",
+        "source_url": "",
+        "transcript_version": "1",
+        "use_scope": "仅作界面试验；非真实研究证据"
+      },
+      {
+        "session_id": "DEMO-S03",
+        "participant_code": "模拟U03",
+        "date": "2026-09-21",
+        "method": "虚构访谈",
+        "context": "独居，使用较高的汤盒和可调层架；内容完全虚构",
+        "source_file": "S03_扩展模拟访谈.txt",
+        "source_url": "",
+        "transcript_version": "1",
+        "use_scope": "仅作界面试验；非真实研究证据"
+      },
+      {
+        "session_id": "DEMO-S04",
+        "participant_code": "模拟U04",
+        "date": "2026-09-22",
+        "method": "虚构访谈",
+        "context": "两人家庭，多用不透明保鲜盒；内容完全虚构",
+        "source_file": "S04_扩展模拟访谈.txt",
+        "source_url": "",
+        "transcript_version": "1",
+        "use_scope": "仅作界面试验；非真实研究证据"
+      },
+      {
+        "session_id": "DEMO-S05",
+        "participant_code": "模拟U05",
+        "date": "2026-09-23",
+        "method": "虚构访谈",
+        "context": "合租两人，各自购买但共用一台冰箱；内容完全虚构",
+        "source_file": "S05_扩展模拟访谈.txt",
+        "source_url": "",
+        "transcript_version": "1",
+        "use_scope": "仅作界面试验；非真实研究证据"
+      },
+      {
+        "session_id": "DEMO-S06",
+        "participant_code": "模拟U06",
+        "date": "2026-09-24",
+        "method": "虚构访谈",
+        "context": "独居，常把预洗蔬菜放果蔬抽屉；内容完全虚构",
+        "source_file": "S06_扩展模拟访谈.txt",
+        "source_url": "",
+        "transcript_version": "1",
+        "use_scope": "仅作界面试验；非真实研究证据"
+      },
+      {
+        "session_id": "DEMO-S07",
+        "participant_code": "模拟U07",
+        "date": "2026-09-25",
+        "method": "虚构访谈",
+        "context": "两人家庭，备餐不规律，常临时决定晚餐；内容完全虚构",
+        "source_file": "S07_扩展模拟访谈.txt",
+        "source_url": "",
+        "transcript_version": "1",
+        "use_scope": "仅作界面试验；非真实研究证据"
+      },
+      {
+        "session_id": "DEMO-S08",
+        "participant_code": "模拟U08",
+        "date": "2026-09-26",
+        "method": "虚构访谈",
+        "context": "独居，周末会留剩菜并关注食材日期；内容完全虚构",
+        "source_file": "S08_扩展模拟访谈.txt",
+        "source_url": "",
+        "transcript_version": "1",
+        "use_scope": "仅作界面试验；非真实研究证据"
+      }
+    ],
+    "excerpts": [
+      {
+        "excerpt_id": "DEMO-E01",
+        "session_id": "DEMO-S01",
+        "line_start": 2,
+        "line_end": 2,
+        "speaker": "受访者",
+        "quote": "周日我会把三天的菜分到盒子里，周一和周二的放在同一层。",
+        "preceding_question": "你通常怎么准备工作日的菜？"
+      },
+      {
+        "excerpt_id": "DEMO-E02",
+        "session_id": "DEMO-S01",
+        "line_start": 4,
+        "line_end": 4,
+        "speaker": "受访者",
+        "quote": "周三那盒在里面，我先把前面两盒拿到台面，取完再放回去。",
+        "preceding_question": "周三取菜时发生过什么？"
+      },
+      {
+        "excerpt_id": "DEMO-E03",
+        "session_id": "DEMO-S01",
+        "line_start": 6,
+        "line_end": 6,
+        "speaker": "受访者",
+        "quote": "也不是，上周只买了两天的量，里面很空，我一伸手就拿到了。",
+        "preceding_question": "每周都要这样拿吗？"
+      },
+      {
+        "excerpt_id": "DEMO-E04",
+        "session_id": "DEMO-S01",
+        "line_start": 8,
+        "line_end": 8,
+        "speaker": "受访者",
+        "quote": "我在盖子上贴周一周二的纸，忙的时候贴纸掉了就得开盖看。",
+        "preceding_question": "怎样知道盒子里是什么？"
+      },
+      {
+        "excerpt_id": "DEMO-E05",
+        "session_id": "DEMO-S02",
+        "line_start": 2,
+        "line_end": 2,
+        "speaker": "受访者",
+        "quote": "我们把今晚要用的盒子放最前面，回来一拿就到了。",
+        "preceding_question": "你们怎样摆放备菜盒？"
+      },
+      {
+        "excerpt_id": "DEMO-E06",
+        "session_id": "DEMO-S02",
+        "line_start": 4,
+        "line_end": 4,
+        "speaker": "受访者",
+        "quote": "有时吃完饭太累，新买的酸奶就塞在前面，第二天得先挪开。",
+        "preceding_question": "归位时有没有变化？"
+      },
+      {
+        "excerpt_id": "DEMO-E07",
+        "session_id": "DEMO-S02",
+        "line_start": 6,
+        "line_end": 6,
+        "speaker": "受访者",
+        "quote": "我按星期放，他常按食材种类放；我回来找周四的盒子会问他放哪了。",
+        "preceding_question": "两个人都按同一方式放吗？"
+      },
+      {
+        "excerpt_id": "DEMO-E08",
+        "session_id": "DEMO-S02",
+        "line_start": 8,
+        "line_end": 8,
+        "speaker": "受访者",
+        "quote": "洗好的盒子晾干后是他放回去的，我第二天有一次在原位没找到。",
+        "preceding_question": "放回去时有什么麻烦？"
+      },
+      {
+        "excerpt_id": "DEMO-E09",
+        "session_id": "DEMO-S03",
+        "line_start": 2,
+        "line_end": 2,
+        "speaker": "受访者",
+        "quote": "我的汤盒高，原来那层塞不进去，我先把上面的隔板抬高。",
+        "preceding_question": "有什么容器不容易放进冷藏室？"
+      },
+      {
+        "excerpt_id": "DEMO-E10",
+        "session_id": "DEMO-S03",
+        "line_start": 4,
+        "line_end": 4,
+        "speaker": "受访者",
+        "quote": "隔板抬高以后上面那层变矮，几个小盒子只能叠起来。",
+        "preceding_question": "调整后对别的东西有什么影响？"
+      },
+      {
+        "excerpt_id": "DEMO-E11",
+        "session_id": "DEMO-S03",
+        "line_start": 6,
+        "line_end": 6,
+        "speaker": "受访者",
+        "quote": "后来换成矮一点的方盒，隔板就不用每次动了。",
+        "preceding_question": "这件事后来怎么解决？"
+      },
+      {
+        "excerpt_id": "DEMO-E12",
+        "session_id": "DEMO-S03",
+        "line_start": 8,
+        "line_end": 8,
+        "speaker": "受访者",
+        "quote": "如果层架能更快调就好，但我不想为了一个汤盒牺牲整层空间。",
+        "preceding_question": "你希望冰箱自己解决什么？"
+      },
+      {
+        "excerpt_id": "DEMO-E13",
+        "session_id": "DEMO-S04",
+        "line_start": 2,
+        "line_end": 2,
+        "speaker": "受访者",
+        "quote": "三个白盒子看着一样，我昨天把两个都拉出来才找到切好的菜。",
+        "preceding_question": "找菜时怎么判断盒内内容？"
+      },
+      {
+        "excerpt_id": "DEMO-E14",
+        "session_id": "DEMO-S04",
+        "line_start": 4,
+        "line_end": 4,
+        "speaker": "受访者",
+        "quote": "透明盒里一眼能看见番茄，放在前面时我不用拿出来。",
+        "preceding_question": "换过透明盒吗？"
+      },
+      {
+        "excerpt_id": "DEMO-E15",
+        "session_id": "DEMO-S04",
+        "line_start": 6,
+        "line_end": 6,
+        "speaker": "受访者",
+        "quote": "我偶尔写日期，但洗盒子时标签会泡掉，剩菜哪天做的就记不清了。",
+        "preceding_question": "会用日期标签吗？"
+      },
+      {
+        "excerpt_id": "DEMO-E16",
+        "session_id": "DEMO-S04",
+        "line_start": 8,
+        "line_end": 8,
+        "speaker": "受访者",
+        "quote": "不用，前面那个透明盒我每天都拿，基本知道里面是什么。",
+        "preceding_question": "所有盒子都需要标签吗？"
+      },
+      {
+        "excerpt_id": "DEMO-E17",
+        "session_id": "DEMO-S05",
+        "line_start": 2,
+        "line_end": 2,
+        "speaker": "受访者",
+        "quote": "我们一人一边，我的备菜盒通常靠左，拿的时候先看左边。",
+        "preceding_question": "你们怎么区分各自的食材？"
+      },
+      {
+        "excerpt_id": "DEMO-E18",
+        "session_id": "DEMO-S05",
+        "line_start": 4,
+        "line_end": 4,
+        "speaker": "受访者",
+        "quote": "上周室友把她的大锅放到左边，我把我的两个盒子挪到后排，周一找了半天。",
+        "preceding_question": "有没有找错的时候？"
+      },
+      {
+        "excerpt_id": "DEMO-E19",
+        "session_id": "DEMO-S05",
+        "line_start": 6,
+        "line_end": 6,
+        "speaker": "受访者",
+        "quote": "我们很少说，谁先回家谁先把东西塞进去；第二天位置不一定一样。",
+        "preceding_question": "归位时会说一声吗？"
+      },
+      {
+        "excerpt_id": "DEMO-E20",
+        "session_id": "DEMO-S05",
+        "line_start": 8,
+        "line_end": 8,
+        "speaker": "受访者",
+        "quote": "室友说她为了放蛋糕把我的盒子往里推过，我没有看到当时怎么放的。",
+        "preceding_question": "会发生互相移动东西吗？"
+      },
+      {
+        "excerpt_id": "DEMO-E21",
+        "session_id": "DEMO-S06",
+        "line_start": 2,
+        "line_end": 2,
+        "speaker": "受访者",
+        "quote": "洗好的生菜盒我常放下层抽屉，做饭前得蹲下把抽屉拉开。",
+        "preceding_question": "预洗蔬菜一般放哪里？"
+      },
+      {
+        "excerpt_id": "DEMO-E22",
+        "session_id": "DEMO-S06",
+        "line_start": 4,
+        "line_end": 4,
+        "speaker": "受访者",
+        "quote": "买菜多的星期，抽屉里的菜一层压一层，我要先拿出一袋蘑菇。",
+        "preceding_question": "抽屉满的时候呢？"
+      },
+      {
+        "excerpt_id": "DEMO-E23",
+        "session_id": "DEMO-S06",
+        "line_start": 6,
+        "line_end": 6,
+        "speaker": "受访者",
+        "quote": "只放两盒菜时，抽屉一拉开就能看到，拿起来不费事。",
+        "preceding_question": "也有顺手的时候吗？"
+      },
+      {
+        "excerpt_id": "DEMO-E24",
+        "session_id": "DEMO-S06",
+        "line_start": 8,
+        "line_end": 8,
+        "speaker": "受访者",
+        "quote": "中层留给牛奶和隔夜菜，我还没试过把生菜盒移上去。",
+        "preceding_question": "为什么不放中层？"
+      },
+      {
+        "excerpt_id": "DEMO-E25",
+        "session_id": "DEMO-S07",
+        "line_start": 2,
+        "line_end": 2,
+        "speaker": "受访者",
+        "quote": "我们只有加班多的周日才分装，平时下班路上买一点当天做。",
+        "preceding_question": "每周都会预先备菜吗？"
+      },
+      {
+        "excerpt_id": "DEMO-E26",
+        "session_id": "DEMO-S07",
+        "line_start": 4,
+        "line_end": 4,
+        "speaker": "受访者",
+        "quote": "当天买的菜我先放门边，半小时后就拿出来做，几乎不碰后排。",
+        "preceding_question": "当天买菜时冰箱怎么用？"
+      },
+      {
+        "excerpt_id": "DEMO-E27",
+        "session_id": "DEMO-S07",
+        "line_start": 6,
+        "line_end": 6,
+        "speaker": "受访者",
+        "quote": "多数时候是我收拾厨房，我知道刚才放哪儿，找盒子不太费劲。",
+        "preceding_question": "谁负责把东西放回去？"
+      },
+      {
+        "excerpt_id": "DEMO-E28",
+        "session_id": "DEMO-S07",
+        "line_start": 8,
+        "line_end": 8,
+        "speaker": "受访者",
+        "quote": "加班那周会塞三天的盒子，周四那盒常在里侧，我得把前面的拿开。",
+        "preceding_question": "加班周有什么不同？"
+      },
+      {
+        "excerpt_id": "DEMO-E29",
+        "session_id": "DEMO-S08",
+        "line_start": 2,
+        "line_end": 2,
+        "speaker": "受访者",
+        "quote": "上周后排有一盒周一的剩菜，周五清冰箱时才看见。",
+        "preceding_question": "有没有忘记过冰箱里的食物？"
+      },
+      {
+        "excerpt_id": "DEMO-E30",
+        "session_id": "DEMO-S08",
+        "line_start": 4,
+        "line_end": 4,
+        "speaker": "受访者",
+        "quote": "我不确定那盒放了几天，最后没吃就倒掉了。",
+        "preceding_question": "发现后怎么处理？"
+      },
+      {
+        "excerpt_id": "DEMO-E31",
+        "session_id": "DEMO-S08",
+        "line_start": 6,
+        "line_end": 6,
+        "speaker": "受访者",
+        "quote": "后来在手机里记了做饭日期，前面那几盒就算没贴纸我也知道哪天做的。",
+        "preceding_question": "有没有不依赖冰箱布局的办法？"
+      },
+      {
+        "excerpt_id": "DEMO-E32",
+        "session_id": "DEMO-S08",
+        "line_start": 8,
+        "line_end": 8,
+        "speaker": "受访者",
+        "quote": "我希望一打开门就先注意到快该吃掉的那盒，但也不想每天弹提醒。",
+        "preceding_question": "你希望冰箱能提示什么？"
+      }
+    ],
+    "observations": [
+      {
+        "observation_id": "DEMO-O01",
+        "excerpt_ids": [
+          "DEMO-E01"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "分装工作日晚餐",
+        "action": "把三天的菜分盒并放在同一层",
+        "object": "",
+        "context": "独居，周日分装三天晚餐食材",
+        "obstacle": "",
+        "consequence": "形成一层多个备菜盒",
+        "workaround": "",
+        "unknown": [
+          "盒子尺寸",
+          "层架净高"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O02",
+        "excerpt_ids": [
+          "DEMO-E02"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "取周三备菜盒",
+        "action": "移开前面两盒后取出目标盒",
+        "object": "",
+        "context": "独居，周日分装三天晚餐食材",
+        "obstacle": "目标盒在后方",
+        "consequence": "多出移出和放回两个动作",
+        "workaround": "临时放到台面",
+        "unknown": [
+          "这类情况出现的次数",
+          "前方盒子是谁放的"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O03",
+        "excerpt_ids": [
+          "DEMO-E03"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "取备菜盒",
+        "action": "购买量较少时直接拿到目标盒",
+        "object": "",
+        "context": "独居，周日分装三天晚餐食材",
+        "obstacle": "",
+        "consequence": "那一周没有报告额外移物",
+        "workaround": "",
+        "unknown": [
+          "购买量与遮挡的关系"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O04",
+        "excerpt_ids": [
+          "DEMO-E04"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "识别备菜盒",
+        "action": "贴纸脱落后打开盒盖辨认",
+        "object": "",
+        "context": "独居，周日分装三天晚餐食材",
+        "obstacle": "标签不能稳定保留",
+        "consequence": "需额外开盖查看",
+        "workaround": "在盒盖贴纸",
+        "unknown": [
+          "盒盖透明度",
+          "标签脱落原因"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O05",
+        "excerpt_ids": [
+          "DEMO-E05"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "下班后取今晚的菜",
+        "action": "把当天盒子放前方并直接拿取",
+        "object": "",
+        "context": "两人家庭，轮流做工作日晚餐",
+        "obstacle": "",
+        "consequence": "受访者称当晚可以直接取用",
+        "workaround": "预先把当天盒子放前方",
+        "unknown": [
+          "这套规则由谁维护",
+          "是否影响其他物品"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O06",
+        "excerpt_ids": [
+          "DEMO-E06"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "晚间归位与次日取物",
+        "action": "把新买酸奶放前方，次日先挪开",
+        "object": "",
+        "context": "两人家庭，轮流做工作日晚餐",
+        "obstacle": "新购物品挡在备菜盒前",
+        "consequence": "次日取物多一步",
+        "workaround": "次日临时移开酸奶",
+        "unknown": [
+          "冰箱当时是否已满"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O07",
+        "excerpt_ids": [
+          "DEMO-E07"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "寻找周四备菜盒",
+        "action": "两人按不同规则归位并询问位置",
+        "object": "",
+        "context": "两人家庭，轮流做工作日晚餐",
+        "obstacle": "摆放规则不一致",
+        "consequence": "需询问另一人",
+        "workaround": "向伴侣确认位置",
+        "unknown": [
+          "询问频率",
+          "是否有共同标记"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O08",
+        "excerpt_ids": [
+          "DEMO-E08"
+        ],
+        "evidence_type": "其他人转述的行为",
+        "task": "归位后再次取盒",
+        "action": "伴侣放回盒子后在原位未找到",
+        "object": "",
+        "context": "两人家庭，轮流做工作日晚餐",
+        "obstacle": "归位位置改变",
+        "consequence": "寻找目标盒",
+        "workaround": "",
+        "unknown": [
+          "实际归位位置",
+          "是否是同一个盒子"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O09",
+        "excerpt_ids": [
+          "DEMO-E09"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "收纳高汤盒",
+        "action": "调整上层隔板后放入汤盒",
+        "object": "",
+        "context": "独居，使用较高的汤盒和可调层架",
+        "obstacle": "原层高不足",
+        "consequence": "收纳前需要调层架",
+        "workaround": "抬高隔板",
+        "unknown": [
+          "汤盒高度",
+          "调整频率"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O10",
+        "excerpt_ids": [
+          "DEMO-E10"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "收纳小备菜盒",
+        "action": "调高隔板后把小盒叠放",
+        "object": "",
+        "context": "独居，使用较高的汤盒和可调层架",
+        "obstacle": "上层净高变小",
+        "consequence": "小盒需要叠放",
+        "workaround": "叠放小盒",
+        "unknown": [
+          "叠放是否影响取用",
+          "层架具体尺寸"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O11",
+        "excerpt_ids": [
+          "DEMO-E11"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "收纳汤类食材",
+        "action": "换矮盒后不再每次调整隔板",
+        "object": "",
+        "context": "独居，使用较高的汤盒和可调层架",
+        "obstacle": "",
+        "consequence": "原先的调层架步骤减少",
+        "workaround": "改用矮盒",
+        "unknown": [
+          "新盒容量够不够"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O12",
+        "excerpt_ids": [
+          "DEMO-E12"
+        ],
+        "evidence_type": "用户表达的偏好／目标／感受",
+        "task": "选择层架方式",
+        "action": "表达希望快速调整且保留其他空间",
+        "object": "",
+        "context": "独居，使用较高的汤盒和可调层架",
+        "obstacle": "",
+        "consequence": "这是偏好，未验证实际效果",
+        "workaround": "",
+        "unknown": [
+          "实际调节时间",
+          "空间损失量"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O13",
+        "excerpt_ids": [
+          "DEMO-E13"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "寻找切好的菜",
+        "action": "拉出两个相似白盒辨认",
+        "object": "",
+        "context": "两人家庭，多用不透明保鲜盒",
+        "obstacle": "外观相似且不透明",
+        "consequence": "找菜多出拉盒动作",
+        "workaround": "逐盒确认",
+        "unknown": [
+          "盒子是否有标签",
+          "盒内食材种类"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O14",
+        "excerpt_ids": [
+          "DEMO-E14"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "识别番茄盒",
+        "action": "通过透明盒直接辨认",
+        "object": "",
+        "context": "两人家庭，多用不透明保鲜盒",
+        "obstacle": "",
+        "consequence": "受访者称不用拿出盒子",
+        "workaround": "使用透明盒",
+        "unknown": [
+          "盒子在后排时是否仍看得见"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O15",
+        "excerpt_ids": [
+          "DEMO-E15"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "确认剩菜日期",
+        "action": "标签泡掉后无法凭标签确认日期",
+        "object": "",
+        "context": "两人家庭，多用不透明保鲜盒",
+        "obstacle": "日期标签不耐清洗",
+        "consequence": "日期信息丢失",
+        "workaround": "偶尔手写日期",
+        "unknown": [
+          "是否有其他记录",
+          "忘记日期后的处理"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O16",
+        "excerpt_ids": [
+          "DEMO-E16"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "识别每天取用的盒子",
+        "action": "不贴标签也能辨认前方透明盒",
+        "object": "",
+        "context": "两人家庭，多用不透明保鲜盒",
+        "obstacle": "",
+        "consequence": "这类盒子没有报告额外识别步骤",
+        "workaround": "固定放前方",
+        "unknown": [
+          "物品位置变化时能否识别"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O17",
+        "excerpt_ids": [
+          "DEMO-E17"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "取自己的备菜盒",
+        "action": "按左右分区寻找自己的盒子",
+        "object": "",
+        "context": "合租两人，各自购买但共用一台冰箱",
+        "obstacle": "",
+        "consequence": "可缩小寻找范围",
+        "workaround": "按人分区",
+        "unknown": [
+          "是否始终遵守分区"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O18",
+        "excerpt_ids": [
+          "DEMO-E18"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "周一寻找自己的盒子",
+        "action": "因他人物品占位把盒子移到后排，再花时间寻找",
+        "object": "",
+        "context": "合租两人，各自购买但共用一台冰箱",
+        "obstacle": "分区被大锅占用",
+        "consequence": "寻找时间增加",
+        "workaround": "将自己的盒子移到后排",
+        "unknown": [
+          "大锅停留多久",
+          "是否提前告知室友"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O19",
+        "excerpt_ids": [
+          "DEMO-E19"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "共同使用冷藏室",
+        "action": "先回家者先归位，位置可能变化",
+        "object": "",
+        "context": "合租两人，各自购买但共用一台冰箱",
+        "obstacle": "缺少位置沟通",
+        "consequence": "次日位置不确定",
+        "workaround": "",
+        "unknown": [
+          "是否真的造成取物延迟",
+          "哪些物品变化最大"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O20",
+        "excerpt_ids": [
+          "DEMO-E20"
+        ],
+        "evidence_type": "其他人转述的行为",
+        "task": "共同归位物品",
+        "action": "转述室友曾把其盒子往里推",
+        "object": "",
+        "context": "合租两人，各自购买但共用一台冰箱",
+        "obstacle": "",
+        "consequence": "当时布局未经受访者亲见",
+        "workaround": "",
+        "unknown": [
+          "盒子是否因此被遮挡"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O21",
+        "excerpt_ids": [
+          "DEMO-E21"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "取预洗生菜",
+        "action": "蹲下并拉开下层抽屉取盒",
+        "object": "",
+        "context": "独居，常把预洗蔬菜放果蔬抽屉",
+        "obstacle": "盒子在低处抽屉",
+        "consequence": "取物包含蹲下和拉抽屉",
+        "workaround": "",
+        "unknown": [
+          "这是否造成困难",
+          "用户身高和冰箱位置"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O22",
+        "excerpt_ids": [
+          "DEMO-E22"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "取抽屉内蔬菜",
+        "action": "先拿出蘑菇再取目标菜",
+        "object": "",
+        "context": "独居，常把预洗蔬菜放果蔬抽屉",
+        "obstacle": "抽屉内叠放",
+        "consequence": "多出移物动作",
+        "workaround": "暂时拿出蘑菇",
+        "unknown": [
+          "是否可换收纳容器"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O23",
+        "excerpt_ids": [
+          "DEMO-E23"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "取少量预洗蔬菜",
+        "action": "少量摆放时直接看到并拿起",
+        "object": "",
+        "context": "独居，常把预洗蔬菜放果蔬抽屉",
+        "obstacle": "",
+        "consequence": "未报告额外找菜步骤",
+        "workaround": "",
+        "unknown": [
+          "与购买量的关系"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O24",
+        "excerpt_ids": [
+          "DEMO-E24"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "安排蔬菜位置",
+        "action": "把中层留给牛奶和隔夜菜",
+        "object": "",
+        "context": "独居，常把预洗蔬菜放果蔬抽屉",
+        "obstacle": "中层已有其他用途",
+        "consequence": "未尝试重新分配位置",
+        "workaround": "沿用原分区",
+        "unknown": [
+          "重分区后是否更方便"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O25",
+        "excerpt_ids": [
+          "DEMO-E25"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "决定工作日晚餐",
+        "action": "仅在加班多的周提前分装",
+        "object": "",
+        "context": "两人家庭，备餐不规律，常临时决定晚餐",
+        "obstacle": "",
+        "consequence": "备菜盒并非每周都有",
+        "workaround": "当天购买当天做",
+        "unknown": [
+          "加班周占比"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O26",
+        "excerpt_ids": [
+          "DEMO-E26"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "短时存放当天食材",
+        "action": "放门边后很快取出",
+        "object": "",
+        "context": "两人家庭，备餐不规律，常临时决定晚餐",
+        "obstacle": "",
+        "consequence": "这一流程几乎不涉及后排",
+        "workaround": "暂放门边",
+        "unknown": [
+          "门边位置是否适宜保鲜",
+          "此做法是否稳定"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O27",
+        "excerpt_ids": [
+          "DEMO-E27"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "餐后归位与次日寻找",
+        "action": "同一人归位且记住位置",
+        "object": "",
+        "context": "两人家庭，备餐不规律，常临时决定晚餐",
+        "obstacle": "",
+        "consequence": "受访者称寻找较省力",
+        "workaround": "",
+        "unknown": [
+          "另一人取用时的情况"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O28",
+        "excerpt_ids": [
+          "DEMO-E28"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "加班周取备菜盒",
+        "action": "移开前方盒子取里侧周四盒",
+        "object": "",
+        "context": "两人家庭，备餐不规律，常临时决定晚餐",
+        "obstacle": "后排被前排遮挡",
+        "consequence": "加班周多出移物步骤",
+        "workaround": "临时移开前方盒子",
+        "unknown": [
+          "实际发生频率",
+          "冰箱当时拥挤程度"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O29",
+        "excerpt_ids": [
+          "DEMO-E29"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "处理周一剩菜",
+        "action": "周五清理时才发现后排剩菜",
+        "object": "",
+        "context": "独居，周末会留剩菜并关注食材日期",
+        "obstacle": "剩菜位于后排",
+        "consequence": "直到周五才被发现",
+        "workaround": "清冰箱时检查后排",
+        "unknown": [
+          "是否有过期或浪费",
+          "当周为何未查看后排"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O30",
+        "excerpt_ids": [
+          "DEMO-E30"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "判断剩菜能否食用",
+        "action": "因日期不确定而丢弃一盒剩菜",
+        "object": "",
+        "context": "独居，周末会留剩菜并关注食材日期",
+        "obstacle": "缺少可靠日期信息",
+        "consequence": "剩菜未被食用",
+        "workaround": "选择丢弃",
+        "unknown": [
+          "食品状态",
+          "日期确认方式"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O31",
+        "excerpt_ids": [
+          "DEMO-E31"
+        ],
+        "evidence_type": "用户自述过去的行为",
+        "task": "确认前排剩菜日期",
+        "action": "查看手机记录确认制作日期",
+        "object": "",
+        "context": "独居，周末会留剩菜并关注食材日期",
+        "obstacle": "",
+        "consequence": "前排盒子未报告日期混淆",
+        "workaround": "在手机记录日期",
+        "unknown": [
+          "手机记录是否长期坚持",
+          "后排盒子是否也可这样管理"
+        ]
+      },
+      {
+        "observation_id": "DEMO-O32",
+        "excerpt_ids": [
+          "DEMO-E32"
+        ],
+        "evidence_type": "用户表达的偏好／目标／感受",
+        "task": "决定优先取用食物",
+        "action": "表达希望看见待优先食用的盒子",
+        "object": "",
+        "context": "独居，周末会留剩菜并关注食材日期",
+        "obstacle": "",
+        "consequence": "偏好尚未经行为验证",
+        "workaround": "",
+        "unknown": [
+          "怎样呈现才不打扰",
+          "会不会改变实际取用"
+        ]
+      }
+    ],
+    "insights": [
+      {
+        "insight_id": "DEMO-I01",
+        "theme_id": "T01",
+        "statement": "当一周备菜盒集中且目标盒在后排时，取物可能增加移出和放回步骤；购买量和前排摆放规则会改变这一情况。",
+        "applies_to": "有多日备餐的1—2人家庭；冷藏室取盒",
+        "support_observation_ids": [
+          "DEMO-O02",
+          "DEMO-O06",
+          "DEMO-O18",
+          "DEMO-O28"
+        ],
+        "limiting_observation_ids": [
+          "DEMO-O03",
+          "DEMO-O05",
+          "DEMO-O26"
+        ],
+        "alternative_explanations": [
+          "购买量而非层架结构导致拥挤",
+          "临时归位打乱既定顺序"
+        ],
+        "open_questions": [
+          "在实际取物记录里，哪些物品挡住目标盒？",
+          "仅改变摆放规则能减少多少次移物？"
+        ],
+        "status": "待审",
+        "reviewer": "",
+        "review_reason": ""
+      },
+      {
+        "insight_id": "DEMO-I02",
+        "theme_id": "T02",
+        "statement": "两人共同归位时，摆放规则不一致可能增加再次寻找和询问；这是否需要产品介入尚未确定。",
+        "applies_to": "轮流做饭或共用冰箱的两人家庭",
+        "support_observation_ids": [
+          "DEMO-O07",
+          "DEMO-O08",
+          "DEMO-O19"
+        ],
+        "limiting_observation_ids": [
+          "DEMO-O05",
+          "DEMO-O27"
+        ],
+        "alternative_explanations": [
+          "双方未约定位置",
+          "仅个别容器难以辨认"
+        ],
+        "open_questions": [
+          "不同成员取同一物品的路径有何不同？",
+          "共享标记是否比改变内部布局有效？"
+        ],
+        "status": "待审",
+        "reviewer": "",
+        "review_reason": ""
+      },
+      {
+        "insight_id": "DEMO-I03",
+        "theme_id": "T03",
+        "statement": "较高容器与现有层高不匹配时，调整层架可能挤占别的物品空间；换容器也可能解决。",
+        "applies_to": "使用高汤盒的家庭",
+        "support_observation_ids": [
+          "DEMO-O09",
+          "DEMO-O10",
+          "DEMO-O12"
+        ],
+        "limiting_observation_ids": [
+          "DEMO-O11"
+        ],
+        "alternative_explanations": [
+          "现有容器规格选择有限",
+          "层架调节方式不够直观"
+        ],
+        "open_questions": [
+          "真实容器尺寸与层高是多少？",
+          "调整层架和换容器各需多少动作？"
+        ],
+        "status": "待审",
+        "reviewer": "",
+        "review_reason": ""
+      },
+      {
+        "insight_id": "DEMO-I04",
+        "theme_id": "T04",
+        "statement": "相似且不透明的盒子可能增加开盖或拉出辨认的步骤；透明盒和稳定标签可能降低这一负担。",
+        "applies_to": "多盒分装备餐的家庭",
+        "support_observation_ids": [
+          "DEMO-O04",
+          "DEMO-O13",
+          "DEMO-O15"
+        ],
+        "limiting_observation_ids": [
+          "DEMO-O14",
+          "DEMO-O16"
+        ],
+        "alternative_explanations": [
+          "盒子只是摆错位置",
+          "用户主要靠记忆而不是外观辨认"
+        ],
+        "open_questions": [
+          "看不见内容时会先读标签还是直接拉盒？",
+          "标签失效是材质问题还是维护问题？"
+        ],
+        "status": "待审",
+        "reviewer": "",
+        "review_reason": ""
+      },
+      {
+        "insight_id": "DEMO-I05",
+        "theme_id": "T02",
+        "statement": "共用冷藏空间中，个人分区被占用可能导致重新摆放与寻找；现有左右分区在多数时候也可能足够。",
+        "applies_to": "合租或共同采购的两人家庭",
+        "support_observation_ids": [
+          "DEMO-O18",
+          "DEMO-O19",
+          "DEMO-O20"
+        ],
+        "limiting_observation_ids": [
+          "DEMO-O17"
+        ],
+        "alternative_explanations": [
+          "大锅等偶发大件造成一次性占位",
+          "沟通方式不足"
+        ],
+        "open_questions": [
+          "分区被打破发生在什么情境？",
+          "无需改柜体的分区提示是否足够？"
+        ],
+        "status": "待审",
+        "reviewer": "",
+        "review_reason": ""
+      },
+      {
+        "insight_id": "DEMO-I06",
+        "theme_id": "T01",
+        "statement": "下层抽屉在装得较满时可能带来蹲下、开抽屉和移物步骤；少量存放时问题并不明显。",
+        "applies_to": "经常取预洗蔬菜的用户",
+        "support_observation_ids": [
+          "DEMO-O21",
+          "DEMO-O22"
+        ],
+        "limiting_observation_ids": [
+          "DEMO-O23",
+          "DEMO-O24"
+        ],
+        "alternative_explanations": [
+          "用户把生菜放下层是个人习惯",
+          "购买量导致叠放而非抽屉结构"
+        ],
+        "open_questions": [
+          "记录不同装载量下的取物动作",
+          "重分配中层空间是否可行？"
+        ],
+        "status": "待审",
+        "reviewer": "",
+        "review_reason": ""
+      },
+      {
+        "insight_id": "DEMO-I07",
+        "theme_id": "T03",
+        "statement": "备餐并非每周持续进行，专为多日备菜设计的布局可能只服务部分使用情境。",
+        "applies_to": "临时做饭与集中备菜交替的两人家庭",
+        "support_observation_ids": [
+          "DEMO-O25",
+          "DEMO-O26",
+          "DEMO-O27"
+        ],
+        "limiting_observation_ids": [
+          "DEMO-O01",
+          "DEMO-O28"
+        ],
+        "alternative_explanations": [
+          "受访者生活节奏短期变化",
+          "可变空间也许同时服务两类情境"
+        ],
+        "open_questions": [
+          "有多少周需要存放三天备菜？",
+          "短时存放食材对布局有何不同要求？"
+        ],
+        "status": "待审",
+        "reviewer": "",
+        "review_reason": ""
+      },
+      {
+        "insight_id": "DEMO-I08",
+        "theme_id": "T04",
+        "statement": "后排剩菜和不稳定的日期标识可能增加遗忘或丢弃风险，但现有材料不足以把原因归于内部布局。",
+        "applies_to": "储存剩菜并关注日期的家庭",
+        "support_observation_ids": [
+          "DEMO-O15",
+          "DEMO-O29",
+          "DEMO-O30"
+        ],
+        "limiting_observation_ids": [
+          "DEMO-O31",
+          "DEMO-O32"
+        ],
+        "alternative_explanations": [
+          "与计划和记忆有关",
+          "手机日期记录已经解决部分辨认问题"
+        ],
+        "open_questions": [
+          "后排位置和遗忘之间是否有可观察关系？",
+          "记录日期后，丢弃情况是否变化？"
+        ],
+        "status": "待审",
+        "reviewer": "",
+        "review_reason": ""
+      },
+      {
+        "insight_id": "DEMO-I09",
+        "theme_id": "T05",
+        "statement": "现有访谈显示取物负担可能同时来自布局、装载量、容器和归位规则，不宜先锁定某一种内部结构方案。",
+        "applies_to": "工作日备餐冰箱布局选题的早期定义阶段",
+        "support_observation_ids": [
+          "DEMO-O02",
+          "DEMO-O06",
+          "DEMO-O10",
+          "DEMO-O18",
+          "DEMO-O22",
+          "DEMO-O28"
+        ],
+        "limiting_observation_ids": [
+          "DEMO-O03",
+          "DEMO-O11",
+          "DEMO-O16",
+          "DEMO-O23",
+          "DEMO-O31"
+        ],
+        "alternative_explanations": [
+          "访谈样本并不代表用户总体",
+          "只有口述，缺少真实取物观察"
+        ],
+        "open_questions": [
+          "先做哪一类情境观察能区分这些成因？",
+          "哪些问题即使不改产品也可通过行为规则解决？"
+        ],
+        "status": "待审",
+        "reviewer": "",
+        "review_reason": ""
+      }
+    ]
+  },
+  "transcripts": {
+    "S01_扩展模拟访谈.txt": [
+      "访谈员：你通常怎么准备工作日的菜？",
+      "受访者：周日我会把三天的菜分到盒子里，周一和周二的放在同一层。",
+      "访谈员：周三取菜时发生过什么？",
+      "受访者：周三那盒在里面，我先把前面两盒拿到台面，取完再放回去。",
+      "访谈员：每周都要这样拿吗？",
+      "受访者：也不是，上周只买了两天的量，里面很空，我一伸手就拿到了。",
+      "访谈员：怎样知道盒子里是什么？",
+      "受访者：我在盖子上贴周一周二的纸，忙的时候贴纸掉了就得开盖看。"
+    ],
+    "S02_扩展模拟访谈.txt": [
+      "访谈员：你们怎样摆放备菜盒？",
+      "受访者：我们把今晚要用的盒子放最前面，回来一拿就到了。",
+      "访谈员：归位时有没有变化？",
+      "受访者：有时吃完饭太累，新买的酸奶就塞在前面，第二天得先挪开。",
+      "访谈员：两个人都按同一方式放吗？",
+      "受访者：我按星期放，他常按食材种类放；我回来找周四的盒子会问他放哪了。",
+      "访谈员：放回去时有什么麻烦？",
+      "受访者：洗好的盒子晾干后是他放回去的，我第二天有一次在原位没找到。"
+    ],
+    "S03_扩展模拟访谈.txt": [
+      "访谈员：有什么容器不容易放进冷藏室？",
+      "受访者：我的汤盒高，原来那层塞不进去，我先把上面的隔板抬高。",
+      "访谈员：调整后对别的东西有什么影响？",
+      "受访者：隔板抬高以后上面那层变矮，几个小盒子只能叠起来。",
+      "访谈员：这件事后来怎么解决？",
+      "受访者：后来换成矮一点的方盒，隔板就不用每次动了。",
+      "访谈员：你希望冰箱自己解决什么？",
+      "受访者：如果层架能更快调就好，但我不想为了一个汤盒牺牲整层空间。"
+    ],
+    "S04_扩展模拟访谈.txt": [
+      "访谈员：找菜时怎么判断盒内内容？",
+      "受访者：三个白盒子看着一样，我昨天把两个都拉出来才找到切好的菜。",
+      "访谈员：换过透明盒吗？",
+      "受访者：透明盒里一眼能看见番茄，放在前面时我不用拿出来。",
+      "访谈员：会用日期标签吗？",
+      "受访者：我偶尔写日期，但洗盒子时标签会泡掉，剩菜哪天做的就记不清了。",
+      "访谈员：所有盒子都需要标签吗？",
+      "受访者：不用，前面那个透明盒我每天都拿，基本知道里面是什么。"
+    ],
+    "S05_扩展模拟访谈.txt": [
+      "访谈员：你们怎么区分各自的食材？",
+      "受访者：我们一人一边，我的备菜盒通常靠左，拿的时候先看左边。",
+      "访谈员：有没有找错的时候？",
+      "受访者：上周室友把她的大锅放到左边，我把我的两个盒子挪到后排，周一找了半天。",
+      "访谈员：归位时会说一声吗？",
+      "受访者：我们很少说，谁先回家谁先把东西塞进去；第二天位置不一定一样。",
+      "访谈员：会发生互相移动东西吗？",
+      "受访者：室友说她为了放蛋糕把我的盒子往里推过，我没有看到当时怎么放的。"
+    ],
+    "S06_扩展模拟访谈.txt": [
+      "访谈员：预洗蔬菜一般放哪里？",
+      "受访者：洗好的生菜盒我常放下层抽屉，做饭前得蹲下把抽屉拉开。",
+      "访谈员：抽屉满的时候呢？",
+      "受访者：买菜多的星期，抽屉里的菜一层压一层，我要先拿出一袋蘑菇。",
+      "访谈员：也有顺手的时候吗？",
+      "受访者：只放两盒菜时，抽屉一拉开就能看到，拿起来不费事。",
+      "访谈员：为什么不放中层？",
+      "受访者：中层留给牛奶和隔夜菜，我还没试过把生菜盒移上去。"
+    ],
+    "S07_扩展模拟访谈.txt": [
+      "访谈员：每周都会预先备菜吗？",
+      "受访者：我们只有加班多的周日才分装，平时下班路上买一点当天做。",
+      "访谈员：当天买菜时冰箱怎么用？",
+      "受访者：当天买的菜我先放门边，半小时后就拿出来做，几乎不碰后排。",
+      "访谈员：谁负责把东西放回去？",
+      "受访者：多数时候是我收拾厨房，我知道刚才放哪儿，找盒子不太费劲。",
+      "访谈员：加班周有什么不同？",
+      "受访者：加班那周会塞三天的盒子，周四那盒常在里侧，我得把前面的拿开。"
+    ],
+    "S08_扩展模拟访谈.txt": [
+      "访谈员：有没有忘记过冰箱里的食物？",
+      "受访者：上周后排有一盒周一的剩菜，周五清冰箱时才看见。",
+      "访谈员：发现后怎么处理？",
+      "受访者：我不确定那盒放了几天，最后没吃就倒掉了。",
+      "访谈员：有没有不依赖冰箱布局的办法？",
+      "受访者：后来在手机里记了做饭日期，前面那几盒就算没贴纸我也知道哪天做的。",
+      "访谈员：你希望冰箱能提示什么？",
+      "受访者：我希望一打开门就先注意到快该吃掉的那盒，但也不想每天弹提醒。"
+    ]
+  },
+  "sourceDocs": {},
+  "baseUrl": ""
+};
